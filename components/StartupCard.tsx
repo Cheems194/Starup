@@ -27,8 +27,8 @@ const StartupCard=({post}:{post:StartupCardType})=>{
                 <div className="flex items-center gap-4">
                     <Link href={`/user/${author?._id}`}>
                         <Image
-                            src={"https://placehold.co/48x48"}
-                            alt="Author avatar"
+                            src={author?.image!}
+                            alt={author?.name!}
                             width={48}
                             height={48}
                             className="rounded-full object-cover"
@@ -54,7 +54,7 @@ const StartupCard=({post}:{post:StartupCardType})=>{
                         {description}
                     </p>
                     <Image
-                        src={image}
+                        src={image!}
                         alt="Startup image"
                         width={500}
                         height={300}
