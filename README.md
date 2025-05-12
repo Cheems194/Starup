@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>Starup</h1>
 
-## Getting Started
+<p><strong>Starup</strong> is a modern web application built with 
+<a href="https://nextjs.org/">Next.js</a>, integrating 
+<a href="https://www.sanity.io/">Sanity.io</a> as a headless CMS and 
+<a href="https://sentry.io/">Sentry</a> for error tracking. 
+The project is styled using 
+<a href="https://tailwindcss.com/">Tailwind CSS</a> and written in 
+<a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
 
-First, run the development server:
+<hr>
 
-```bash
-npm run dev
+<h2>Features</h2>
+<ul>
+  <li>Server-side rendering and static site generation with Next.js</li>
+  <li>Content management via Sanity.io</li>
+  <li>Error monitoring with Sentry</li>
+  <li>Utility-first styling with Tailwind CSS</li>
+  <li>Type safety with TypeScript</li>
+</ul>
+
+<hr>
+
+<h2>Getting Started</h2>
+
+<h3>Prerequisites</h3>
+<ul>
+  <li>Node.js (v14 or later)</li>
+  <li>npm or yarn</li>
+</ul>
+
+<h3>Installation</h3>
+<ol>
+  <li><strong>Clone the repository:</strong><br><br>
+    <pre><code>git clone https://github.com/Cheems194/Starup.git
+cd Starup
+    </code></pre>
+  </li>
+
+  <li><strong>Install dependencies:</strong><br><br>
+    <pre><code>npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
+    </code></pre>
+  </li>
+
+  <li>Create a new file named .env.local in the root of your project and add the following content:
+<br><br>
+
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID=
+NEXT_PUBLIC_SANITY_DATASET=
+NEXT_PUBLIC_SANITY_API_VERSION='vX'
+SANITY_TOKEN=
+AUTH_SECRET= 
+AUTH_GITHUB_ID=
+AUTH_GITHUB_SECRET=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Replace the placeholder values with your actual Sanity credentials. You can obtain these credentials by signing up & creating a new project on the Sanity website.
+</li>
+  <li><strong>Run the development server:</strong><br><br>
+    <pre><code>npm run dev
+# or
+yarn dev
+    </code></pre>
+  </li>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  <li><strong>Visit the application:</strong>
+    <p>Open <a href="http://localhost:3000">http://localhost:3000</a> in your browser.</p>
+  </li>
+</ol>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<hr>
 
-## Learn More
+<h2>Project Structure</h2>
 
-To learn more about Next.js, take a look at the following resources:
+<pre><code>Starup/
+├── app/             # Application pages and routing
+├── components/      # Reusable UI components
+├── lib/             # Utility functions and libraries
+├── public/          # Static assets
+├── sanity/          # Sanity.io configuration and schemas
+├── styles/          # Global styles and Tailwind CSS configuration
+├── next.config.ts   # Next.js configuration
+├── tsconfig.json    # TypeScript configuration
+└── README.md        # Project documentation
+</code></pre>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<hr>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>Acknowledgements</h2>
+<ul>
+  <li><a href="https://nextjs.org/docs">Next.js Documentation</a></li>
+  <li><a href="https://www.sanity.io/docs">Sanity.io Documentation</a></li>
+  <li><a href="https://docs.sentry.io/">Sentry Documentation</a></li>
+  <li><a href="https://tailwindcss.com/docs">Tailwind CSS Documentation</a></li>
+</ul>
